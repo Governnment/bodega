@@ -1,4 +1,26 @@
 //? File: _header.scss
 
 .navbar
-  display: none
+  display: inline-flex
+
+  .burger
+    content: url('../../images/stats.svg')
+    padding: 2rem 1rem 2rem 3rem
+
+  .search-box
+    height: 33px
+    width: 439px
+    background-color: $secondary-color
+    margin: 1.5rem 4rem
+    border-radius: 10px
+    display: flex
+    align-items: flex-end
+
+  .i-search:first-child
+    content: url('../../images/search.svg')
+    color: $secondary-text-color
+    align-self: center
+    margin: 10px
+  p
+    align-self: center
+    color: $secondary-text-color
