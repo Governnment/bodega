@@ -4,7 +4,7 @@ const CategorySlider = () => {
   return (
     <>
       <div className='CategorySlider.Item'>
-        <img src='all' />
+        <img src='all' alt='all' />
         <h2>All</h2>
       </div>
       <div className='CategorySlider.Control'>

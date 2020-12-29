@@ -1,17 +1,28 @@
 //? File: _header.scss
 
 .navbar
-  display: inline-flex
+  top: 20%
+  left: 20%
+  display: grid
+  grid-template-columns: 0.2fr 1.8fr 15fr
+  gap: 0px 0px
+
+  h1
+    padding: 0.6rem 1rem 2rem 1rem
 
   .burger
+    top: 40px
+    left: 51px
     content: url('../../images/stats.svg')
     padding: 2rem 1rem 2rem 3rem
+    width: 30px
+    height: 30px
 
   .search-box
-    height: 33px
-    width: 439px
+    height: 43px
+    width: 539px
     background-color: $secondary-color
-    margin: 1.5rem 4rem
+    margin: 1.3rem 2rem
     border-radius: 10px
     display: flex
     align-items: flex-end
