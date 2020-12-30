@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Bodega</h1>
       <div className='search-box'>
         <i className='i-search'></i>
-        <p>Search ...</p>
+        <input type='text' name='' placeholder='Type to search' />
       </div>
     </div>
   )

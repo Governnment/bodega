@@ -18,7 +18,7 @@
     width: 30px
     height: 30px
 
-  .search-box
+  .search-box input
     height: 43px
     width: 539px
     background-color: $secondary-color
@@ -26,12 +26,22 @@
     border-radius: 10px
     display: flex
     align-items: flex-end
+    border: none
+    &:focus
+      outline: none
+
+  input[type="text" i]
+    padding-left: 3rem
+    color: $secondary-text-color
 
   .i-search:first-child
-    content: url('../../images/search.svg')
+    position: absolute
+    content: url('../../images/search.png')
+    width: 24px
+    height: 24px
     color: $secondary-text-color
     align-self: center
-    margin: 10px
+    margin: 2rem 3rem
   p
     align-self: center
     color: $secondary-text-color
