@@ -9,7 +9,6 @@ const HomeScreen = () => {
     <>
       <Header />
       <Banner />
-      <h2>Restaurant 🍔</h2>
       <CategorySlider />
       <Recomendations />
     </>
