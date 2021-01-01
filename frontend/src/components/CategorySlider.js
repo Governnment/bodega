@@ -64,8 +64,11 @@ const CategorySlider = () => {
           </div>
           <h3>Dining</h3>
         </div>
+
         <div className='CategorySlider-Control'>
-          <i className='i-r-arrow-sm' />
+          <Link>
+            <i className='i-r-arrow-sm' />
+          </Link>
         </div>
       </div>
     </>
