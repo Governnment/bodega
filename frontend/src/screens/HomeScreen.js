@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import CategorySlider from '../components/CategorySlider'
 import DeliveryTime from '../components/DeliveryTime'
 import Recomendations from '../components/Recomendations'
+import MyOrders from '../components/MyOrders'
 
 const HomeScreen = () => {
   return (
@@ -13,6 +14,7 @@ const HomeScreen = () => {
       <CategorySlider />
       <DeliveryTime />
       <Recomendations />
+      <MyOrders />
     </>
   )
 }
