@@ -6,4 +6,78 @@
   top: 0
   background: $secondary-color
   width: 28%
-  height: 100vh
+  height: 100%
+  .i-profile
+    width: 30px
+    height: auto
+    position: absolute
+    content: url('../../images/profile.png')
+    padding-top: 2rem
+    right: 30%
+  .order-numbers
+    position: absolute
+    width: 35px
+    height: 35px
+    background: $slider-active-color
+    top: 1.8rem
+    right: 18%
+    border-radius: 8px
+  .order-numbers span
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 20px
+    font-family: 'Inter', sans-serif
+    font-weight: 600
+  h2
+    position: absolute
+    padding: 3.5rem 4rem
+    font-size: 28px
+    font-weight: 800
+  .order-details
+    display: grid
+    grid-template-columns: repeat(2, 2fr)
+    grid-template-rows: repeat(2, 1fr)
+    position: absolute
+    background: #503E9D
+    width: 320px
+    height: 130px
+    margin: 13rem 4rem
+    border-radius: 20px
+    & span, p
+      color: #ffffff
+    a
+      color: #FCD561
+      font-family: 'Inter', sans-serif
+      font-weight: 500
+      white-space: nowrap
+    .order-details-address
+      grid-area: 1/ 1/ 1 /1
+      padding: 1.5rem 1rem
+      font-size: 19px
+      font-family: 'Inter', sans-serif
+      font-weight: 500
+      white-space: nowrap
+    .time-wrapper
+      grid-area: 2/ 2/ 2 /1
+      padding: 0rem 1rem
+      & i
+        content: url('../../images/time-myorders.png')
+        color: #FCD561
+        width: 20px
+        height: auto
+        background: #604C96
+        padding: 0.5rem
+        border-radius: 10px
+    .order-details-time
+      grid-area: 2/ 2/ 2 /1
+      padding: 0 4rem
+      transform: translate(0%, -30%)
+      font-family: 'Inter', sans-serif
+      font-weight: 500
+      white-space: nowrap
+    .order-details-edit
+      padding: 1.5rem 4.5rem
+    .order-details-choose-time
+      padding: 0.4rem 0.4rem
