@@ -4,9 +4,10 @@
   position: absolute
   right: 0
   top: 0
+  bottom: 0
   background: $secondary-color
   width: 33%
-  height: 100vh
+  height: 100%
   .i-profile
     width: 30px
     height: auto
@@ -43,7 +44,7 @@
     background: #503E9D
     width: 320px
     height: 130px
-    margin: 13rem 4rem
+    margin: 12rem 4rem
     border-radius: 20px
     & span, p
       color: #ffffff
@@ -65,7 +66,7 @@
       & i
         content: url('../../images/time-myorders.png')
         color: #FCD561
-        width: 20px
+        width: 35px
         height: auto
         background: #604C96
         padding: 0.5rem
@@ -73,7 +74,7 @@
     .order-details-time
       grid-area: 2/ 2/ 2 /1
       padding: 0 4rem
-      transform: translate(0%, -30%)
+      transform: translate(0%, 10%)
       font-family: 'Inter', sans-serif
       font-weight: 500
       white-space: nowrap
@@ -81,10 +82,12 @@
       padding: 1.5rem 4.5rem
     .order-details-choose-time
       padding: 0.4rem 0.4rem
+    & .ant-picker
+
   .order-items-list
     display: grid
     grid-template-rows: repeat(3, 1fr)
-    padding: 25rem 4rem 0 4rem
+    padding: 23rem 4rem 0 4rem
     row-gap: 0.5rem
     .order-item
       display: grid
@@ -129,3 +132,90 @@
         margin: 1rem 0
         transform: translateX(210%)
         color: #6B6B6B
+    .order-total
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      & h4
+        font-size: 25px
+        font-family: 'Inter', sans-serif
+        font-weight: 600
+        white-space: nowrap
+      & strong
+        font-size: 28px
+        font-family: 'Inter', sans-serif
+        font-weight: 800
+        white-space: nowrap
+        padding: 1.9rem 1.2rem 0 8.3rem
+      & hr
+        position: absolute
+        right: 0
+        width: 90%
+        height: 2px
+        margin: 5.3rem 0
+        border: none
+        background: rgba(155,155,155, 0.3)
+    .order-checkout
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(2,1fr)
+      & p
+        grid-area: 1/ 1/ 1/ 1
+      .ant-input-number
+        grid-area: 2/ 1/ 2/ 1
+        user-select: none
+        transform: translate(3%, -34%)
+        & input
+          width: 80px
+          height: 20px
+          text-align: center
+          color: transparent
+          text-shadow: 0 0 0 #000000
+          border-color: rgba(155, 155, 155, 0.25)
+          border-radius: 8px
+          padding: 5px
+          font-size: 18px
+          font-family: 'Inter', sans-serif
+          font-weight: 700
+          &:focus
+            outline: none
+            border-color: rgba(155, 155, 155, 0.25)
+        & .ant-input-number-handler-wrap
+          display: grid
+          grid-template-columns: repeat(2, 1fr)
+          grid-gap: 1rem
+          cursor: pointer
+          & span[aria-label="Decrease Value"]
+            width: 18px
+            padding-left: 0.4rem
+            float: left
+            margin-right: 45px
+            content: url('../../images/minus.png')
+          & span[aria-label="Increase Value"]
+            width: 16px
+            content: url('../../images/plus.png')
+
+      & button
+        grid-area: 2/ 2/ 3/ 2
+        position: absolute
+        width: 180px
+        height: 90px
+        background: #FCD561
+        border: none
+        border-radius: 20px 0 0 20px
+        transform: translateY(15%)
+        right: 0
+        font-size: 17px
+        font-family: 'Inter', sans-serif
+        font-weight: 700
+        cursor: pointer
+        transition: 0.3s ease-in-out
+        &:focus
+          outline: none
+        &:hover
+          box-shadow: 1px 1px 13px 6px rgba(248,222,142,0.55)
+      .i-r-arrow
+        content: url('../../images/arrow-right-black.png')
+        padding-left: 1rem
+        width: 20px
+        height: 20px
+        transform: translateY( 15%)
